@@ -1,6 +1,10 @@
 `timescale 1ns/1ps
 
 module tb_fir_filter;
+    initial begin
+       $dumpfile("fir_waveform.vcd");
+       $dumpvars(0, tb_fir_filter);
+    end
 
     parameter NUM_TAPS = 121;
 
